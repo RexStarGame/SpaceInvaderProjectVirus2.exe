@@ -8,15 +8,12 @@ public class ProjecttileShootPlayer : MonoBehaviour
     public float delayOnShoot = 4;
     public float defulDelayonShoot = 4;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
-       
+
         delayOnShoot -= Time.deltaTime;
 
         if (Input.GetButtonDown("Fire1") && delayOnShoot < 0)

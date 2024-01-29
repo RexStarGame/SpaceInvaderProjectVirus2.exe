@@ -2,17 +2,21 @@ using TMPro;
 using UnityEngine;
 
 
-[System.Serializable]
+
 public class TimerController : MonoBehaviour
 {
     public TMP_Text timerText;
     public GameObject gameOverPanel;
     public TMP_InputField playerNameInput;
 
-    private float gameTime;
+    public  float gameTime;
     private bool isGameOver = false;
 
-    void Update()
+    public void Start()
+    {
+        gameTime = 0;
+    }
+    public void Update()
     {
         if (!isGameOver)
         {
@@ -36,8 +40,13 @@ public class TimerController : MonoBehaviour
 
         playerNameInput.Select();
         playerNameInput.ActivateInputField();
-    }
 
+        // Find the KillScore instance in the scene
+        KillScore killScoreInstance = FindObjectOfType<KillScore>();
+
+        // Check if KillScore instance exists
+     
+    }
     public void SaveScoreToLeaderboard()
     {
 

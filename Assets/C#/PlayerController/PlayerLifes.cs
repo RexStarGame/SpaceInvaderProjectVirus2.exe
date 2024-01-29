@@ -11,6 +11,7 @@ public class PlayerLifes : MonoBehaviour
     public GameObject gameOverPanel;
 
     public KillScore KillsManager;
+    public string playerName = "DefaultPlayer";
     // Start is called before the first frame update
     void Start()
     {

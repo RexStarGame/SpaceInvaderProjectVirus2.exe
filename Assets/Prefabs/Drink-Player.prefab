@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5422778768841069683}
   m_Layer: 0
   m_Name: FirePoint
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3759739847604590129, guid: ec88262077ef57c4786d0d7b5690dd12, type: 3}
+  delayOnShoot: 0.9
+  defulDelayonShoot: 0.9
 --- !u!1 &4353693158858355224
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,6 +60,7 @@ GameObject:
   - component: {fileID: 3494141190096292901}
   - component: {fileID: 2287946100453141153}
   - component: {fileID: 4780368527023983250}
+  - component: {fileID: 8391968397049579745}
   m_Layer: 0
   m_Name: Drink-Player
   m_TagString: Player
@@ -123,7 +126,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5106a46d68e88094283508a4020fef2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -196,7 +199,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.98, y: 1.5}
+    oldSize: {x: 3.09375, y: 2.34375}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -246,3 +249,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hInpudt: 0
+--- !u!114 &8391968397049579745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353693158858355224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2725adb887f9ef0459a387be0b8a4f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+  livesUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  explosionPrefab: {fileID: 7986479715712842361, guid: 76f39e78f699cab42a28abb1dbb961bb, type: 3}
+  gameOverPanel: {fileID: 0}
+  KillsManager: {fileID: 0}
+  playerName: DefaultPlayer

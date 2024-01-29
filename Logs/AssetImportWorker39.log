@@ -1,0 +1,863 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'da' Physical Memory: 16123 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker39
+-projectPath
+C:/Users/patri/Space Invader
+-logFile
+Logs/AssetImportWorker39.log
+-srvPort
+57267
+Successfully changed project path to: C:/Users/patri/Space Invader
+C:/Users/patri/Space Invader
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [41224] Host "[IP] 192.168.230.1 [Port] 0 [Flags] 2 [Guid] 1593900167 [EditorId] 1593900167 [Version] 1048832 [Id] WindowsEditor(7,RexStarGame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [41224] Host "[IP] 192.168.230.1 [Port] 0 [Flags] 2 [Guid] 1593900167 [EditorId] 1593900167 [Version] 1048832 [Id] WindowsEditor(7,RexStarGame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 42.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/patri/Space Invader/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2860)
+    Vendor:   NVIDIA
+    VRAM:     7962 MB
+    Driver:   31.0.15.3210
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009587 seconds.
+- Loaded All Assemblies, in  0.255 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 443 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.661 seconds
+Domain Reload Profiling: 913ms
+	BeginReloadAssembly (78ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (91ms)
+		LoadAssemblies (74ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (89ms)
+			TypeCache.Refresh (88ms)
+				TypeCache.ScanAssembly (79ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (662ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (626ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (536ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (58ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\patri\Space Invader\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\patri\Space Invader\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.664 seconds
+Refreshing native plugins compatible for Editor in 4.29 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.409 seconds
+Domain Reload Profiling: 1067ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (489ms)
+		LoadAssemblies (434ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (92ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (409ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (289ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4109 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (60.7 KB). Loaded Objects now: 4581.
+Memory consumption went from 150.9 MB to 150.8 MB.
+Total: 4.026600 ms (FindLiveObjects: 0.377400 ms CreateObjectMapping: 0.132600 ms MarkObjects: 3.366100 ms  DeleteObjects: 0.149400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/RankManager.cs: 24645d1ede8a91362888d054032edad7 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/SavingManger.cs: 9f2c9ab29eeea47eb8da8df12ad98a3e -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/DataSaver.cs: e5681b44ae8383125a80832a4035ce35 -> 
+  custom:scripting/monoscript/fileName/ScoreBoard.cs: 2ca190c64ec05b6119eb41d7e54ba2d4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HighscoreTable.cs: 4cdff648e39922ecd1f5acb83bde9a5f -> 
+  custom:scripting/monoscript/fileName/LeaderboardController.cs: 02cb9b4f5eaf82a61d8494d0b042e884 -> 
+  custom:scripting/monoscript/fileName/ConfirmScoreNickName.cs: e43e1510442a8c1218a159d3caef3301 -> 
+  custom:scripting/monoscript/fileName/PlayerData.cs: e4b7b96b5a8bcbcb4be40bfb1d4ff5c1 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PowerUps.cs: 7c757ecc48ed423bf7bd18effe0bc5d3 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/ReloadSpeedBuff.cs: 750500572565b29ddd6a8336b79f9c13 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/Group.cs: 903723bd4660a2f6afba1f16e84958ee -> 
+  custom:scripting/monoscript/fileName/TestCompare.cs: d1d09ed6974a4f4d94c6b4ebd171ced5 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PowerUpsObject.cs: b571f3528db386ba0ea50f58df874678 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 209306.277713 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Graph PSD/Diagram 2.psd
+  artifactKey: Guid(ffa3eec42d24172438c2d18668515c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Graph PSD/Diagram 2.psd using Guid(ffa3eec42d24172438c2d18668515c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02850f064bfe340fde18b4d631adced1') in 0.080753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.346692 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Graph PNG/Diagram 5.png
+  artifactKey: Guid(08d88e1629f6cde418922636c28174f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Graph PNG/Diagram 5.png using Guid(08d88e1629f6cde418922636c28174f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4869f482d3ab080fc9cf46379e5ea2') in 0.034763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034427 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Game and Toys PNG/Diamond.png
+  artifactKey: Guid(5f3b919d28cec764cbe9a20ca07d7a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Game and Toys PNG/Diamond.png using Guid(5f3b919d28cec764cbe9a20ca07d7a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a3fb7578727936bed75a2dd96f4e15') in 0.029906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Game and Toys PSD/Diamond.psd
+  artifactKey: Guid(7e820f80848cc104cacf70e80c6ccbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Game and Toys PSD/Diamond.psd using Guid(7e820f80848cc104cacf70e80c6ccbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93616e5de97696a05b01e86e29255e7') in 0.028732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.513260 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Dice PNG/Dice 1.png
+  artifactKey: Guid(bb7ede92fac0c994bac50198837f0e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Dice PNG/Dice 1.png using Guid(bb7ede92fac0c994bac50198837f0e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e7dd6f7f37b283b93e59e596a75694') in 0.025986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Dice PSD/Dice 2.psd
+  artifactKey: Guid(b99ff6d55ff71f441b20e90e6282a756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Dice PSD/Dice 2.psd using Guid(b99ff6d55ff71f441b20e90e6282a756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6996f5a22a0171cfaee2d7ce4f711f63') in 0.051243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.019403 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Dice PNG/Dice 3.png
+  artifactKey: Guid(1bf6a9d5a0d557a4fb2ad3a5f25bf7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Dice PNG/Dice 3.png using Guid(1bf6a9d5a0d557a4fb2ad3a5f25bf7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0c4b6b0005f7150b4c505e6be89a43') in 0.037996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Dice PSD/Dice 5.psd
+  artifactKey: Guid(19600908ac568ae499b56d71fe1614c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Dice PSD/Dice 5.psd using Guid(19600908ac568ae499b56d71fe1614c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fec8e1e0cecec165fea643d61806cf') in 0.033630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.242283 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Dice PSD/Dice 6.psd
+  artifactKey: Guid(948310d2d7840f44291cc83b56842272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Dice PSD/Dice 6.psd using Guid(948310d2d7840f44291cc83b56842272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbcdfa07876be208185dacf17f7effb0') in 0.037831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Social media PNG/Discord.png
+  artifactKey: Guid(4bb08b96d071b4337a3bf73f2bd192af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Social media PNG/Discord.png using Guid(4bb08b96d071b4337a3bf73f2bd192af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a9876e490757ee7088555a70dde3f8') in 0.032575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.324112 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/On Off PSD/Dislike.psd
+  artifactKey: Guid(bdcf54f5e98bdcc4c9b0d21ded666b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/On Off PSD/Dislike.psd using Guid(bdcf54f5e98bdcc4c9b0d21ded666b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b730e45d863e5cf4fd53c93ab95517d') in 0.038942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/UI PNG/Document.png
+  artifactKey: Guid(90445c62dd0506c4e8ca38ae48fcc744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/UI PNG/Document.png using Guid(90445c62dd0506c4e8ca38ae48fcc744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc11884ed4895cfe08f0b37aaf26d3e') in 0.032898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.030985 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Animals PNG/Dog.png
+  artifactKey: Guid(76f27e632dc0f764c8c040dfc9461d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Animals PNG/Dog.png using Guid(76f27e632dc0f764c8c040dfc9461d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c70d9719415f1656b9fed4081ca4ed') in 0.039640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Animals PSD/Dog kennel.psd
+  artifactKey: Guid(c4799100b3f157148af864b4dad64fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Animals PSD/Dog kennel.psd using Guid(c4799100b3f157148af864b4dad64fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd950cfe99ddbea17eb9bb69cba057e67') in 0.026270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.268995 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Money PSD/Dollars.psd
+  artifactKey: Guid(da897d9567f01bf4fbe4a805dd09d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Money PSD/Dollars.psd using Guid(da897d9567f01bf4fbe4a805dd09d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd989e3b67d87d5bd28d4ab68a23f831') in 0.028061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Home PNG/Door 2.png
+  artifactKey: Guid(3af1f31d7c77daa4a80fe27b22d7fed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Home PNG/Door 2.png using Guid(3af1f31d7c77daa4a80fe27b22d7fed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd566fb9e1cc78123b8fd17c93d5c38') in 0.028116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.312349 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/UI PSD/Dots.psd
+  artifactKey: Guid(2d2b42048d5d5be44820283ef1cc0fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/UI PSD/Dots.psd using Guid(2d2b42048d5d5be44820283ef1cc0fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1dd2db6264a7cb65c457ab5cbad750') in 0.031669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.557741 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Symbol PSD/Double quotes U.psd
+  artifactKey: Guid(0479df8c2248fbd4099a79c5df7f93c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Symbol PSD/Double quotes U.psd using Guid(0479df8c2248fbd4099a79c5df7f93c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01155beb4aa81ef110196a1c3d7d3127') in 0.027602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.054786 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/IT PNG/Download.png
+  artifactKey: Guid(8a600cd8deb34ee4199aa85c3e460c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/IT PNG/Download.png using Guid(8a600cd8deb34ee4199aa85c3e460c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce793592804d1c0afc31c3bd2605ed6') in 0.028207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.810214 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Transport PNG/Drive.png
+  artifactKey: Guid(c705efe23b3f2c64b9e54c53298cedec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Transport PNG/Drive.png using Guid(c705efe23b3f2c64b9e54c53298cedec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb6a8c0982a0045771b2ee46504c0ac') in 0.014750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.040031 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Transport PSD/Drive 1.psd
+  artifactKey: Guid(e4e0422b39baafd4492f702496712d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Transport PSD/Drive 1.psd using Guid(e4e0422b39baafd4492f702496712d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b643cc39c3947ac97bfb6a2eafa43ccf') in 0.030900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Weather PNG/Drop.png
+  artifactKey: Guid(9fedd2aae4e5eca4bbc40eecb77ec04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Weather PNG/Drop.png using Guid(9fedd2aae4e5eca4bbc40eecb77ec04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991790422eeca40a5bb7fa0a09919382') in 0.035469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.358941 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Animals PNG/Duck.png
+  artifactKey: Guid(f9d7831c39c3b054ba54c7dcf75e1621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Animals PNG/Duck.png using Guid(f9d7831c39c3b054ba54c7dcf75e1621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c07b6ef29acc568cb42eb711c6461c') in 0.035041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Keyboard PNG/E.png
+  artifactKey: Guid(32163e3d8cc3f1d499a100731c405215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Keyboard PNG/E.png using Guid(32163e3d8cc3f1d499a100731c405215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ddfc7cc50d2f60af638650db8b45726') in 0.033627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.460702 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Body PSD/Ear.psd
+  artifactKey: Guid(752da0b7cd41b4e6d96d0339ce58da2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Body PSD/Ear.psd using Guid(752da0b7cd41b4e6d96d0339ce58da2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148a55274ed23c4c5ab67d09544e2639') in 0.033087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.048887 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Graphics editor PSD/Edit.psd
+  artifactKey: Guid(50b9537b194f0af43b380aec1eedd0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Graphics editor PSD/Edit.psd using Guid(50b9537b194f0af43b380aec1eedd0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771e68806af6220d913bd7a122db8d87') in 0.030206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.296625 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Animals PNG/Egg.png
+  artifactKey: Guid(cc46e8a873c4eb845a9c0473c9f1c6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Animals PNG/Egg.png using Guid(cc46e8a873c4eb845a9c0473c9f1c6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428997c7794c3a99fa09131691d17511') in 0.030405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Electricity.psd
+  artifactKey: Guid(740d6585e2466d941841bf4da7528a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Electricity.psd using Guid(740d6585e2466d941841bf4da7528a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056017f9ee35f63a398b75df8f3297d7') in 0.032279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015642 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electricity Symbol.png
+  artifactKey: Guid(f6e510b7ffd770a4fbad6a0ea0574e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electricity Symbol.png using Guid(f6e510b7ffd770a4fbad6a0ea0574e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae114890744e75e3611febe25794a3b') in 0.025499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electrocution risk.png
+  artifactKey: Guid(fd444dfb452c93d4dbcb72d715ccabe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electrocution risk.png using Guid(fd444dfb452c93d4dbcb72d715ccabe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9d8fb0f5651656071e1f6a9ae08c9c') in 0.049147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.242579 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electrocution risk Symbol.png
+  artifactKey: Guid(46d52177bbe632043b565a7972206243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Hazard signs PNG/Electrocution risk Symbol.png using Guid(46d52177bbe632043b565a7972206243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ecea737da8f6be786330f60dc395e8') in 0.034042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/Enter.psd
+  artifactKey: Guid(3a80a1d5a9b5f0f47a06eb4d6c72a538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/Enter.psd using Guid(3a80a1d5a9b5f0f47a06eb4d6c72a538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78f95522a50ff9da99356f43f42e246') in 0.026881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.328566 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Hazard signs PSD/Entrapment risk.psd
+  artifactKey: Guid(aef849943f19a8c49a9317752f39a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Hazard signs PSD/Entrapment risk.psd using Guid(aef849943f19a8c49a9317752f39a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6f9694a921b02b16c253b9f14b03d5') in 0.031004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Environmental hazard Symbol.psd
+  artifactKey: Guid(9db79d5bb69661645bbe6261270e777b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Environmental hazard Symbol.psd using Guid(9db79d5bb69661645bbe6261270e777b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d6d4bacca597ddf4c370b168611b4a') in 0.039289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017313 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/UI PSD/Equalizer.psd
+  artifactKey: Guid(f6c199fb12dc1154b8b2af77b4e6a3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/UI PSD/Equalizer.psd using Guid(f6c199fb12dc1154b8b2af77b4e6a3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbd61d2fd43622018f6a35294cd1e99') in 0.034363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Office PNG/Erase.png
+  artifactKey: Guid(b3f69c7ad8e77ee4ab5c1ef228537e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Office PNG/Erase.png using Guid(b3f69c7ad8e77ee4ab5c1ef228537e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967b3b4eba44f63fe2dbe48f2e31f460') in 0.025339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.412196 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/Esc.psd
+  artifactKey: Guid(c33166e036b264a48837e6d1488fcfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/Esc.psd using Guid(c33166e036b264a48837e6d1488fcfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff18b947f581885d5b092b4b4e343750') in 0.029959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Money PNG/Euro.png
+  artifactKey: Guid(163e557f97119764ca9c47652fd530d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Money PNG/Euro.png using Guid(163e557f97119764ca9c47652fd530d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810826282a4f1daa21d9810331dc43cb') in 0.023672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.045096 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Other PNG/Explosion.png
+  artifactKey: Guid(fdfe6964192ef884f8bffe4096a70d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Other PNG/Explosion.png using Guid(fdfe6964192ef884f8bffe4096a70d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a71fd79afc5486c1a5137370a89d65') in 0.044905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.485654 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Hazard signs PSD/Explosion risk.psd
+  artifactKey: Guid(fe8b49b792024144b9dca104807b7896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Hazard signs PSD/Explosion risk.psd using Guid(fe8b49b792024144b9dca104807b7896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766b2f24e3861038b1bff182023c9373') in 0.039994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.798410 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/On Off PNG/Eye off.png
+  artifactKey: Guid(5c7414859a5b3cf49bf2ea92974ebd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/On Off PNG/Eye off.png using Guid(5c7414859a5b3cf49bf2ea92974ebd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e368309473ec5b79d76ade570076847') in 0.036241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.042836 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/On Off PSD/Eye on.psd
+  artifactKey: Guid(0a78476e7eeed7b4b9efce45f83483b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/On Off PSD/Eye on.psd using Guid(0a78476e7eeed7b4b9efce45f83483b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b7a097e848150bd043932fb4666b7a') in 0.030756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Body PSD/Eye open.psd
+  artifactKey: Guid(a6e68f425e8234c84b31d21c48bd5494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Body PSD/Eye open.psd using Guid(a6e68f425e8234c84b31d21c48bd5494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cc453f86a5ecc03ab817d9b0a648fb') in 0.029492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.227716 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F.psd
+  artifactKey: Guid(3eaac7bbced152a4ab86c3751008d9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F.psd using Guid(3eaac7bbced152a4ab86c3751008d9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a97b60f8b2d391819001698f08db3f') in 0.033227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Keyboard PNG/F1.png
+  artifactKey: Guid(c6055246d6e023443a7fe1f3edc3dc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Keyboard PNG/F1.png using Guid(c6055246d6e023443a7fe1f3edc3dc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5c6dc85fa256ce0c706b1cd4e89a8c') in 0.019845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.397551 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F3.psd
+  artifactKey: Guid(1ddcc7324131b9f4ab5e91b27ca1fb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F3.psd using Guid(1ddcc7324131b9f4ab5e91b27ca1fb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe47524b04f0bf62e597225049a5359') in 0.023749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.048420 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F5.psd
+  artifactKey: Guid(601b70990a6527f479d3c57667c543b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F5.psd using Guid(601b70990a6527f479d3c57667c543b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a52e279ab7e3ed1c5be31efe5d529ef') in 0.029795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F6.psd
+  artifactKey: Guid(e1dd634df69c0274dad1a0aac4ce58e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F6.psd using Guid(e1dd634df69c0274dad1a0aac4ce58e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e54cf42aaf9fe692f1dc643ffe5af') in 0.029904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.367960 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F7.psd
+  artifactKey: Guid(b2a51693dc5ae2343a28c034efe51109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F7.psd using Guid(b2a51693dc5ae2343a28c034efe51109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6cc6bc071d34d7d4a2fe9b9042fb95') in 0.023590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.380630 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F9.psd
+  artifactKey: Guid(55e38f75523e769489bc698dcc9f9bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Keyboard PSD/F9.psd using Guid(55e38f75523e769489bc698dcc9f9bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0e05647ce083d5247c956b0dd042cf') in 0.031245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F10.psd
+  artifactKey: Guid(18149a4cc8d0ff24296aa8eca6e6d0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F10.psd using Guid(18149a4cc8d0ff24296aa8eca6e6d0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a191036a1cc925ccec4cdc3df21e61d') in 0.017254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016980 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Keyboard PNG/F11.png
+  artifactKey: Guid(5f390743d7e246142a1ef4e017738e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Keyboard PNG/F11.png using Guid(5f390743d7e246142a1ef4e017738e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c4594bfd06d18a6f548a8d9209f619') in 0.013582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F12.psd
+  artifactKey: Guid(d9b47b025309df34796c5f12ff785ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/F12.psd using Guid(d9b47b025309df34796c5f12ff785ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226896b216080412ddfff468d86db2d5') in 0.023248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.427051 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Social media PNG/Facebook 1.png
+  artifactKey: Guid(26db6dc6248931041ae137af43c5af76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Social media PNG/Facebook 1.png using Guid(26db6dc6248931041ae137af43c5af76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab08bffc7535c82480c5e6145a8f1610') in 0.029219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Falling object.psd
+  artifactKey: Guid(fbaa84e9186bd0c48b43884d6e77e859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Hazard signs PSD/Falling object.psd using Guid(fbaa84e9186bd0c48b43884d6e77e859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c25087e99f432c4805b6d4b0d94b92') in 0.026208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.312135 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Animals PNG/Feather.png
+  artifactKey: Guid(7fa05710bf311ba48ad2052d7a3b232e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Animals PNG/Feather.png using Guid(7fa05710bf311ba48ad2052d7a3b232e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e29a7740c6c05da55c7d1a7699896a') in 0.026936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.021749 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Home PNG/Fence.png
+  artifactKey: Guid(28564566bda5dc243b152d4e8a43e735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Home PNG/Fence.png using Guid(28564566bda5dc243b152d4e8a43e735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e163f535fdeb9415bbdbc9146ab3dff') in 0.028688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/UI PNG/Filter.png
+  artifactKey: Guid(94079ad103441554784a26befc11c289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/UI PNG/Filter.png using Guid(94079ad103441554784a26befc11c289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99eb64ac54c1945a12f611533a6416ae') in 0.027270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.320402 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Health and beauty PNG/First aid kit.png
+  artifactKey: Guid(ebd3515bffc5a0744a35f912ab2669c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Health and beauty PNG/First aid kit.png using Guid(ebd3515bffc5a0744a35f912ab2669c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a175158f452d6cff81212abb4f2d8c6') in 0.031359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.254744 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Kitchen PSD/Fish.psd
+  artifactKey: Guid(a2b33f8e28714314a85a607a6f1e19a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Kitchen PSD/Fish.psd using Guid(a2b33f8e28714314a85a607a6f1e19a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132b073a0e3786ca5d1d976f06e823a9') in 0.022316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.572734 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Other PNG/Flags.png
+  artifactKey: Guid(9d2a1c7c1abc8f043a9ae2f8897ef605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Other PNG/Flags.png using Guid(9d2a1c7c1abc8f043a9ae2f8897ef605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f3e8f45e384cfbb4ed99a640f72a54') in 0.030824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Hazard signs PNG/Flammable materials.png
+  artifactKey: Guid(c63cd704aa25ce1438d3e7c97a49848e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PNG icons_black outline/Hazard signs PNG/Flammable materials.png using Guid(c63cd704aa25ce1438d3e7c97a49848e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ddff7516aa0ff37408ea1aaa7f5c8d') in 0.030870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.170122 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/O.psd
+  artifactKey: Guid(e7ddeab22f656ca4b9c258ff9cb4468a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Keyboard PSD/O.psd using Guid(e7ddeab22f656ca4b9c258ff9cb4468a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5451cd55689f7ab352d0e553682b2020') in 0.030268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Other PSD/Oil.psd
+  artifactKey: Guid(c686aff21a2513c4a931b888fdce9412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Other PSD/Oil.psd using Guid(c686aff21a2513c4a931b888fdce9412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103a7364e42bf00b6ebe2b20763824ec') in 0.029648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.855929 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Transport PNG/STOP.png
+  artifactKey: Guid(db6a33b19fb5d91489748d7ef3207ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Transport PNG/STOP.png using Guid(db6a33b19fb5d91489748d7ef3207ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab57ca0f6a3412e47deaefd63d7e93b1') in 0.035253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Weather PSD/Sun.psd
+  artifactKey: Guid(8a0fd9dd68eb3724c8d6381c0ce47a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Weather PSD/Sun.psd using Guid(8a0fd9dd68eb3724c8d6381c0ce47a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79af7197dc7149c9d9270b080e65d00') in 0.026393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Bags PSD/Sutecase.psd
+  artifactKey: Guid(b8b979fb03397b847bfc3b61b626ea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Bags PSD/Sutecase.psd using Guid(b8b979fb03397b847bfc3b61b626ea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758d56caf063edbfd0997af420fe8b0c') in 0.029834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004251 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/On Off PSD/Switch on.psd
+  artifactKey: Guid(cddf307d034431e46adc77ee1a0ac7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/On Off PSD/Switch on.psd using Guid(cddf307d034431e46adc77ee1a0ac7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09dcf1cf92d4f5fbce6066589bcecfb7') in 0.026735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PNG icons_white/Military PNG/Sword.png
+  artifactKey: Guid(f183dbe7a0bd7f848bd8e131ca7f03e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PNG icons_white/Military PNG/Sword.png using Guid(f183dbe7a0bd7f848bd8e131ca7f03e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c60562cde301afb2e72af7a4ad10950') in 0.035634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007497 seconds.
+  path: Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Arrows PSD/Thin arrow U.psd
+  artifactKey: Guid(50280abd966cdff4f833e627b03f6097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_Black outline/PSD icons_black outline/Arrows PSD/Thin arrow U.psd using Guid(50280abd966cdff4f833e627b03f6097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8c25715a4b2fd7b901a1d9594707bb') in 0.033857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 14.500775 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Clothes PSD/T-shirt W.psd
+  artifactKey: Guid(8757f4542a69b4942b44909f5b1d3127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Clothes PSD/T-shirt W.psd using Guid(8757f4542a69b4942b44909f5b1d3127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a438891ecb57028065b19fc55e7a5ced') in 0.026319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.046959 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Military PSD/Sword 1.psd
+  artifactKey: Guid(f431227b4a1a1f44cb687b417b8905ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Military PSD/Sword 1.psd using Guid(f431227b4a1a1f44cb687b417b8905ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2f65792f4e49cb6400c49510d606d5') in 0.025839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.195271 seconds.
+  path: Assets/Simple Vector Icons/Icons_White/PSD icons_white/Transport PSD/Steering wheel.psd
+  artifactKey: Guid(4912008861c8f5a409416fb40ac95e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vector Icons/Icons_White/PSD icons_white/Transport PSD/Steering wheel.psd using Guid(4912008861c8f5a409416fb40ac95e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb4685b8536f89c931be764fe16e693') in 0.028074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\patri\Space Invader\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\patri\Space Invader\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.379 seconds
+Refreshing native plugins compatible for Editor in 6.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.745 seconds
+Domain Reload Profiling: 1115ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (242ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (745ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (243ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 8.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (34.7 KB). Loaded Objects now: 4591.
+Memory consumption went from 142.7 MB to 142.6 MB.
+Total: 4.809100 ms (FindLiveObjects: 0.383800 ms CreateObjectMapping: 0.138600 ms MarkObjects: 4.231700 ms  DeleteObjects: 0.053300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/RankManager.cs: 24645d1ede8a91362888d054032edad7 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/SavingManger.cs: 9f2c9ab29eeea47eb8da8df12ad98a3e -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/DataSaver.cs: e5681b44ae8383125a80832a4035ce35 -> 
+  custom:scripting/monoscript/fileName/ScoreBoard.cs: 2ca190c64ec05b6119eb41d7e54ba2d4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HighscoreTable.cs: 4cdff648e39922ecd1f5acb83bde9a5f -> 
+  custom:scripting/monoscript/fileName/LeaderboardController.cs: 02cb9b4f5eaf82a61d8494d0b042e884 -> 
+  custom:scripting/monoscript/fileName/ConfirmScoreNickName.cs: e43e1510442a8c1218a159d3caef3301 -> 
+  custom:scripting/monoscript/fileName/PlayerData.cs: e4b7b96b5a8bcbcb4be40bfb1d4ff5c1 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PowerUps.cs: 7c757ecc48ed423bf7bd18effe0bc5d3 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/ReloadSpeedBuff.cs: 750500572565b29ddd6a8336b79f9c13 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/Group.cs: 903723bd4660a2f6afba1f16e84958ee -> 
+  custom:scripting/monoscript/fileName/TestCompare.cs: d1d09ed6974a4f4d94c6b4ebd171ced5 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PowerUpsObject.cs: b571f3528db386ba0ea50f58df874678 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: I/O-handlingen er blevet afbrudt pga. en afsluttende tråd eller programanmodning.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
