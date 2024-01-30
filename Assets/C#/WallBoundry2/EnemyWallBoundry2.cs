@@ -10,13 +10,7 @@ public class EnemyWallBoundry2 : MonoBehaviour
     {
         if (other.CompareTag(wallBoundaryTag))
         {
-            if (other.transform != transform && other.transform.IsChildOf(transform))
-            {
-                // Ignore collisions with child objects
-                return;
-            }
-
-            Destroy(gameObject); // Destroy the parent GameObject along with its children
+            Destroy(gameObject); // Destroy the GameObject with this script
         }
     }
 }

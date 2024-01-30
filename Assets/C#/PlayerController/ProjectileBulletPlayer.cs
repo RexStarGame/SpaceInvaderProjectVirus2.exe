@@ -40,6 +40,7 @@ public class ShipShooting : MonoBehaviour
 
                 Destroy(gameObject);
             }
+
             
         }
 
@@ -48,4 +49,5 @@ public class ShipShooting : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

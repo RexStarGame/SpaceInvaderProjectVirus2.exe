@@ -22,4 +22,5 @@ public class ProjecttileShootPlayer : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         }
     }
+
 }

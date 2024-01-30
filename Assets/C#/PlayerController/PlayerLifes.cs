@@ -55,9 +55,10 @@ public class PlayerLifes : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy Prokectile")
+        if (collision.gameObject.tag == "EnemyProjectile")
         {
             Destroy(collision.gameObject);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
