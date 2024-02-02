@@ -18,51 +18,67 @@ public class PlayerLifes : MonoBehaviour
         gameOverPanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.collider.gameObject.tag == "Enemy")
+        if (collision.CompareTag("EnemyProjectile"))
         {
-            Destroy(collision.collider.gameObject);
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            lives -= 1;
-            for(int i = 0; i < livesUI.Length; i++)
-            {
-                if(i < lives)
-                {
-                    livesUI[i].enabled = true;
-                }
-                else
-                {
-                    livesUI[i].enabled = false;
-                }
-            }
-            if(lives <= 0)
-            {
-                
-                Debug.Log("GameObject Destoryed");
-                Destroy(gameObject);
-                Debug.Log("Game Over!");
-                Time.timeScale = 0;
-                gameOverPanel.SetActive(true);
-
-                //Call the HighScoreUpdate
-                KillsManager.HighScoreUpdate();
-            }
+            HandleProjectileCollision(collision.gameObject);
+        }
+        else
+        {
+            HandleCollision(collision.gameObject);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyProjectile")
+        Debug.Log("Collided with: " + collision.collider.gameObject.tag);  // Log the tag of the collided object
+
+        HandleCollision(collision.collider.gameObject);
+    }
+
+    private void HandleProjectileCollision(GameObject collidedObject)
+    {
+        Destroy(collidedObject);
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        lives -= 1;
+
+        // Update UI based on remaining lives
+        for (int i = 0; i < livesUI.Length; i++)
         {
-            Destroy(collision.gameObject);
+            if (i < lives)
+            {
+                livesUI[i].enabled = true;
+            }
+            else
+            {
+                livesUI[i].enabled = false;
+            }
+        }
+
+        // Check if player has no more lives
+        if (lives <= 0)
+        {
+            Debug.Log("GameObject Destroyed");
+            Destroy(gameObject);
+            Debug.Log("Game Over!");
+            Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
+
+            // Call the HighScoreUpdate
+            KillsManager.HighScoreUpdate();
+        }
+    }
+
+    private void HandleCollision(GameObject collidedObject)
+    {
+        if (collidedObject.CompareTag("Enemy") || collidedObject.CompareTag("Boss"))
+        {
+            Destroy(collidedObject);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             lives -= 1;
+
+            // Update UI based on remaining lives
             for (int i = 0; i < livesUI.Length; i++)
             {
                 if (i < lives)
@@ -74,18 +90,19 @@ public class PlayerLifes : MonoBehaviour
                     livesUI[i].enabled = false;
                 }
             }
+
+            // Check if player has no more lives
             if (lives <= 0)
             {
-                Debug.Log("GameObject Destoryed");
+                Debug.Log("GameObject Destroyed");
                 Destroy(gameObject);
                 Debug.Log("Game Over!");
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
 
-                //Call the HighScoreUpdate
+                // Call the HighScoreUpdate
                 KillsManager.HighScoreUpdate();
             }
         }
     }
 }
-

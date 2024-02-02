@@ -10,9 +10,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject initiallySelectedObject; // Assign your initial menu item to this field in the Unity Editor
     private GameObject[] menuButtons; // Array to hold all menu buttons
     private int selectedButtonIndex = 0; // Index of the currently selected button
-
+    public bool isGameOverAtive;
+    public GameObject gameOverChecker;
+    public GameObject mainMenuChecker;
+    public GameObject leaderboardChecker;
     public void Start()
     {
+        isGameOverAtive = false;
         // Populate the array with all menu buttons
         menuButtons = new GameObject[]
         {
@@ -35,13 +39,14 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && gameOverChecker.activeSelf == false && mainMenuChecker.activeSelf == false && leaderboardChecker.activeSelf == false) // checks if any menus is aktiv before the player can open the pause menu.
         {
             if (isPaused)
-                ResumeGame();
+                ResumeGame(); // resuming the game. 
             else
-                PauseGame();
+                PauseGame(); // calling PauseMenu
         }
+        
 
         // Check for arrow keys and 'E' key when the game is paused
         if (isPaused)
@@ -66,12 +71,15 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        Time.timeScale = 0;
-        pausePanel.SetActive(true);
-        isPaused = true;
-        // Set the initial selected button
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(menuButtons[selectedButtonIndex]);
+       
+            Time.timeScale = 0; //stop the time in game.
+            pausePanel.SetActive(true); //aktivier pause menu 
+            isPaused = true; //checks if it's set on pause or not. 
+            // Set the initial selected button
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(menuButtons[selectedButtonIndex]);
+        
+       
     }
 
     public void ResumeGame()
@@ -79,5 +87,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         pausePanel.SetActive(false);
         isPaused = false;
+    }
+    public void GameOver()
+    {
+
+        
+        isGameOverAtive = true;   
+
+        
     }
 }

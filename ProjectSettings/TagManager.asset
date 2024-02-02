@@ -12,6 +12,8 @@ TagManager:
   - WallBoundry2
   - Enemy Projectile
   - EnemyProjectile
+  - StartGameButton
+  - Boss
   layers:
   - Default
   - TransparentFX

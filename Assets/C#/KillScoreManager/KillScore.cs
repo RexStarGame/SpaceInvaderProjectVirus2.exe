@@ -20,8 +20,8 @@ public class KillScore : MonoBehaviour
     private Dictionary<string, int> leaderboard = new Dictionary<string, int>();
     public TMP_Text topScoresText;
     private bool confirmationCompleted = false;
-    public int noTies = 1;
-
+    public int noTies = 0;
+    
     // New variable to store play time
     private float playTime = 0f;
 
@@ -101,6 +101,8 @@ public class KillScore : MonoBehaviour
 
         // Get the player's nickname from the input field
         nicknameInputField.onEndEdit.AddListener(OnEndEdit);
+        //calling the leaderboard from here so after you have confirm your named you'll directly get to the leaderboard.
+        
     }
 
     private void OnEndEdit(string value)
@@ -125,6 +127,7 @@ public class KillScore : MonoBehaviour
 
         // Log a message to indicate that SaveScoreToLeaderboard was called
         Debug.Log("SaveScoreToLeaderboard called with playTime: " + playTime);
+
     }
 
     // Update is called once per frame
@@ -259,7 +262,7 @@ public class KillScore : MonoBehaviour
         string topScoresString = "Top 15 Scores:\n";
 
 
-        for (int i = 0; i < top10List.Count; i++)
+        for (int i = 0; i < top10List.Count; i++) //I tæller plasen som har på leaderboardet 
         {
             var entry = top10List[i];
             string rankColor = GetRankColor(i + 1); // Adjust the index to start from 1
@@ -275,7 +278,7 @@ public class KillScore : MonoBehaviour
             }
             else
             {
-                topScoresString += $"<color=green>{entry.playerName}:</color> ";
+                topScoresString += $"<color=white>{entry.playerName}:</color> ";
             }
 
             topScoresString += $"<color=red>{entry.score} kills</color> ";
@@ -304,11 +307,11 @@ public class KillScore : MonoBehaviour
         switch (index % 3)
         {
             case 0:
-                return "red";
+                return "yellow";
             case 1:
-                return "#6495ED";
+                return "#C0C0C0";
             case 2:
-                return "purple";
+                return "#CD7F32";
             default:
                 return "white";
         }
