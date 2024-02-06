@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (Input.GetButtonDown("Cancel") && gameOverChecker.activeSelf == false && mainMenuChecker.activeSelf == false && leaderboardChecker.activeSelf == false) // checks if any menus is aktiv before the player can open the pause menu.
         {

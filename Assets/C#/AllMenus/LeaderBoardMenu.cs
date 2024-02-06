@@ -15,6 +15,7 @@ public class LeaderboardMenu : MonoBehaviour
 
     private bool isCooldownActive = false;
     public float cooldownDuration = 0.2f; // Adjust the duration as needed
+
     public void Start()
     {
         // Set the default active menu
@@ -58,12 +59,15 @@ public class LeaderboardMenu : MonoBehaviour
             // Add logic for other input keys if needed
 
             // Check if 'DownArrow' key is pressed
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)))
             {
                 // Force the selection of the current button
                 EventSystem.current.SetSelectedGameObject(null); // Deselect the current button
                 EventSystem.current.SetSelectedGameObject(leaderboardButtons[selectedButtonIndex]);
             }
+
+            // Check if 'G' key is pressed
+            CheckGKeyInput(); // Call the method to handle 'G' key press
         }
     }
 
@@ -78,29 +82,8 @@ public class LeaderboardMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(leaderboardButtons[selectedButtonIndex]);
     }
 
-
     public void LoadLeaderboardMenu()
     {
-        // Set the last active menu to false
-        lastActiveMenu.SetActive(false);
-
-        // Activate the leaderboard menu
-        leaderboardMenu.SetActive(true);
-        lastActiveMenu = leaderboardMenu;  // Update the last active menu
-        Time.timeScale = 0f; // Pause the game
-
-        // Set the initial selected button for the leaderboard menu
-        SetInitialSelectedButton();
-
-
-        //new updated: still testing if this part would work. 
-        // Check if the leaderboard menu is already active
-        if (leaderboardMenu.activeSelf)
-        {
-            Debug.Log("Leaderboard menu is already active.");
-            return;
-        }
-
         // Set the last active menu to false
         lastActiveMenu.SetActive(false);
 
@@ -117,21 +100,17 @@ public class LeaderboardMenu : MonoBehaviour
     {
         // Return to the last active menu
         SetMenusActive(false, false, false);
-       
         gameMenu.SetActive(true); //return to game
         Time.timeScale = 0f; // Unpause the game
-
     }
+
     public void ReturnToLeaderBoard()
     {
         // Return to the last active menu
         SetMenusActive(false, false, false);
-
         leaderboardMenu.SetActive(true); //return to game
         Time.timeScale = 0f; // Unpause the game
-
     }
-
 
     private void SetMenusActive(bool leaderboardActive, bool gameMenuaktiv, bool pauseActive)
     {
@@ -139,10 +118,21 @@ public class LeaderboardMenu : MonoBehaviour
         gameMenu.SetActive(gameMenuaktiv);
         pauseMenu.SetActive(pauseActive);
     }
+
     private IEnumerator StartCooldown()
     {
         isCooldownActive = true;
         yield return new WaitForSeconds(cooldownDuration);
         isCooldownActive = false;
+    }
+    void CheckGKeyInput()
+    {
+        if (Input.GetKeyDown(KeyCode.G) && EventSystem.current.currentSelectedGameObject != null)
+        {
+            Debug.Log("G Key Pressed");
+
+            // Simulate a button click
+            ExecuteEvents.Execute(EventSystem.current.currentSelectedGameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerClickHandler);
+        }
     }
 }

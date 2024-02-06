@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238978ea4320bc54da050a2cee10d759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2114788917517147278}
+  healthSlider: {fileID: 138834664634291927, guid: 772304d1ebf66994a84d5ca36e560f41, type: 3}
 --- !u!114 &5719490688621695833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238978ea4320bc54da050a2cee10d759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 3417041645510930452}
+  healthSlider: {fileID: 138834664634291927, guid: 772304d1ebf66994a84d5ca36e560f41, type: 3}
 --- !u!114 &5223034074796861474
 MonoBehaviour:
   m_ObjectHideFlags: 0

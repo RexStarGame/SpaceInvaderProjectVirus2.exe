@@ -45,9 +45,11 @@ GameObject:
   - component: {fileID: 4672092655923725097}
   - component: {fileID: 5836732466492112868}
   - component: {fileID: 8520474677401491894}
+  - component: {fileID: 3274887653726141508}
+  - component: {fileID: 18343520778524850}
   m_Layer: 8
   m_Name: Boss
-  m_TagString: Boss
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,8 +272,8 @@ MonoBehaviour:
   - {fileID: 3563533182247857853}
   - {fileID: 7466622763692857631}
   - {fileID: 4641165259519776965}
-  minTimeBetweenShots: 4
-  maxTimeBetweenShots: 10
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 4
   specialBulletChance: 0.05
 --- !u!114 &8520474677401491894
 MonoBehaviour:
@@ -286,6 +288,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreLayer: EnemyShip
+--- !u!114 &3274887653726141508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920634800678972248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238978ea4320bc54da050a2cee10d759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 138834664634291927, guid: 772304d1ebf66994a84d5ca36e560f41, type: 3}
+--- !u!114 &18343520778524850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920634800678972248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a9f0160bdae7c43888736ee46414d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSliderPrefab: {fileID: 4929253016095537812, guid: 772304d1ebf66994a84d5ca36e560f41, type: 3}
 --- !u!1 &4022781802984660468
 GameObject:
   m_ObjectHideFlags: 0

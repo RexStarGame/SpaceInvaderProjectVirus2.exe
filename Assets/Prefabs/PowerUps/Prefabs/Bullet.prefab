@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7996696323582818232}
   - component: {fileID: 5467451209429444335}
   - component: {fileID: 2111387768317275483}
-  - component: {fileID: 5819011970401806695}
   - component: {fileID: 796323103220626091}
+  - component: {fileID: -3607844683828690011}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: EnemyProjectile
@@ -160,19 +160,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5819011970401806695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6048581191392667982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1788e2bd8a7fc408f462faaaa795f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!114 &796323103220626091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreLayer: EnemyShip
+--- !u!114 &-3607844683828690011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048581191392667982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1788e2bd8a7fc408f462faaaa795f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10

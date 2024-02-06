@@ -4,6 +4,10 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+
+
+
 public class ShipShooting : MonoBehaviour
 {
     public float moveSpeed;
@@ -15,6 +19,7 @@ public class ShipShooting : MonoBehaviour
     void Start()
     {
         KillScoreManager = GameObject.Find("KillManager").GetComponent<KillScore>();
+       
     }
 
     // Update is called once per frame
@@ -24,27 +29,29 @@ public class ShipShooting : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
-            EnemyHealth.health -= 1;
-            
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
 
-            Instantiate(explostionPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-            if (EnemyHealth.health <= 0)
+            if (enemyHealth != null)
             {
-                Destroy(collision.gameObject);
-                KillScoreManager.UpdateScore(1);
-                //need to add Health for the Enemy. 
-                
-
-                Destroy(gameObject);
+                enemyHealth.TakeDamage(1); // Adjust the damage amount as needed
+                Instantiate(explostionPrefab, transform.position, Quaternion.identity);
+                if (enemyHealth.IsDead())
+                {
+                    // Enemy is dead, handle scoring and other actions
+                    Destroy(collision.gameObject);
+                    KillScoreManager.UpdateScore(1);
+                    Instantiate(explostionPrefab, transform.position, Quaternion.identity);
+                }
             }
 
-            
+            // Always destroy the player's ship regardless of the enemy's state
+            Destroy(gameObject);
         }
 
-        if(collision.gameObject.tag == "WallBoundry")
+
+        if (collision.gameObject.tag == "WallBoundry")
         {
             Destroy(gameObject);
         }

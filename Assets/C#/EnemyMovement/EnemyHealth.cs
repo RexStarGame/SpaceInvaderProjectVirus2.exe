@@ -2,25 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]
-    private GameObject enemy;
-    
-    public static float health = 2;
+    public static float initialHealth1 = 5f;
+    private float initialHealth = initialHealth1;
+    private float currentHealth;
 
+    public UnityEngine.UI.Slider healthSlider;
+
+    // Event to notify other scripts about changes in health
+    public event System.Action<float> OnHealthChanged;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        health = 2; 
-       
+        currentHealth = initialHealth;
+
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = initialHealth;
+            healthSlider.value = currentHealth;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    // Example: Deduct health when the enemy is damaged
+    public void TakeDamage(float damageAmount)
     {
-        
+        currentHealth -= damageAmount;
+
+        // Notify subscribers about the change in health
+        OnHealthChanged?.Invoke(currentHealth);
+
+        // Example: Check if the enemy is dead after taking damage
+        if (IsDead())
+        {
+            Destroy(gameObject);
+        }
     }
-  
+
+    // Example: Check if the enemy is dead
+    public bool IsDead()
+    {
+        return currentHealth <= 0;
+    }
 }
