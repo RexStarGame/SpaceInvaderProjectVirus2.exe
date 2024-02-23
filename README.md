@@ -5,8 +5,8 @@ you are free to try out our game Space invader however, it's not finish yet as t
 how to play the game. 
 
 
-use arrow up to aktiveate speed attack. 
-use arrow down to aktivate explosion skill.
+use the up-arrow to aktiveate speed attack. 
+use the down-arrow to aktivate explosion skill.
 hold the button f down in order to shoot normal attack. 
 
 use left and right arrows or a, d to turn left and right. 
