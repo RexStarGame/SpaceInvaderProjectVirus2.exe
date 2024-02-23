@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]
-    public static float initialHealth1 = 5f;
-    private float initialHealth = initialHealth1;
-    private float currentHealth;
+    private float initialHealth = 5f;
 
+    private float currentHealth;
     public UnityEngine.UI.Slider healthSlider;
 
     // Event to notify other scripts about changes in health

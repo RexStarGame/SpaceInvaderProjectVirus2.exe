@@ -16,6 +16,8 @@ public class LeaderboardMenu : MonoBehaviour
     private bool isCooldownActive = false;
     public float cooldownDuration = 0.2f; // Adjust the duration as needed
 
+    
+
     public void Start()
     {
         // Set the default active menu
@@ -24,6 +26,15 @@ public class LeaderboardMenu : MonoBehaviour
 
         // Set the initial selected button for the leaderboard menu
         SetInitialSelectedButton();
+    }
+    public void LoadLeaderboard()
+    {
+        // Toggle visibility of UI elements
+        gameMenu.SetActive(false); // Assuming gameMenu is your main game UI
+        leaderboardMenu.SetActive(true);
+        // Set the last active menu to false
+        lastActiveMenu.SetActive(false);
+        // Time.timeScale should be set based on your game's requirements
     }
 
     private void SetInitialSelectedButton()
@@ -98,6 +109,7 @@ public class LeaderboardMenu : MonoBehaviour
 
     public void ReturnToLastMenu()
     {
+        leaderboardMenu.SetActive(false);
         // Return to the last active menu
         SetMenusActive(false, false, false);
         gameMenu.SetActive(true); //return to game

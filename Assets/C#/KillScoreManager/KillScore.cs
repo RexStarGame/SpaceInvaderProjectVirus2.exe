@@ -21,10 +21,13 @@ public class KillScore : MonoBehaviour
     public TMP_Text topScoresText;
     private bool confirmationCompleted = false;
     public int noTies = 0;
-    
+    public TMP_Text progressText;
     // New variable to store play time
     private float playTime = 0f;
-
+    private bool isGPressed = false;
+    private bool isVPressed = false;
+    private bool isDPressed = false;
+    private bool isBPressed = false;
     // Function to add or update a player's score
 
     public void AddScore(string playerName, int kills, float playTime)
@@ -72,6 +75,7 @@ public class KillScore : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        nicknameInputField.characterLimit = 12;  // Set the character limit to 12
         LoadHighScores();
         highScoreText.text = PlayerPrefs.GetInt("SavedHighScore").ToString();
 
@@ -133,12 +137,19 @@ public class KillScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            
+        CheckSecretCode();
+
+
      playTime += Time.deltaTime;
-                
-         
+
+        if (PlayerPrefs.HasKey("SavedHighScore"))
+        {
+            int topScore = PlayerPrefs.GetInt("SavedHighScore");
+            float progressPercentage = (float)killScore / topScore * 100f;
+            progressText.text = $"Progress: {progressPercentage:F1}%";
+        }
     }
+
     public void SaveScoreToLeaderboard(float playTime)
     {
         // Your existing code for saving the score
@@ -182,8 +193,8 @@ public class KillScore : MonoBehaviour
         }
 
         // Update our TMP
-        finalScoreText.text = "LastScore: " + killScore.ToString();
-        highScoreText.text =  " Top 1's HighScore: " + PlayerPrefs.GetInt("SavedHighScore").ToString();
+        finalScoreText.text = "Your Score: " + killScore.ToString();
+        highScoreText.text =  "HighScore: " + PlayerPrefs.GetInt("SavedHighScore").ToString();
 
     }
 
@@ -355,4 +366,50 @@ public class KillScore : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
     }
+    private void CheckSecretCode()
+    {
+        // Check for G, V, D, B keys pressed simultaneously
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            isGPressed = true;
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            isVPressed = true;
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            isDPressed = true;
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            isBPressed = true;
+        }
+
+        // Check if all keys are pressed simultaneously
+        if (isGPressed && isVPressed && isDPressed && isBPressed)
+        {
+            // Reset the score when the secret code is entered
+            ResetScore();
+        }
+
+        // Reset the flags if any of the keys are released
+        if (Input.GetKeyUp(KeyCode.G))
+        {
+            isGPressed = false;
+        }
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            isVPressed = false;
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            isDPressed = false;
+        }
+        if (Input.GetKeyUp(KeyCode.B))
+        {
+            isBPressed = false;
+        }
+    }
+
 }

@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 8505378896190241556}
   - component: {fileID: 5539860839269727893}
   - component: {fileID: 4023479759140246877}
-  - component: {fileID: 1887958409978286897}
   m_Layer: 8
   m_Name: Skype
   m_TagString: Enemy
@@ -305,16 +304,3 @@ MonoBehaviour:
   shootInterval: 1
   bulletSpeed: 5
   deviationAngle: 80
---- !u!114 &1887958409978286897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6653854531583761908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238978ea4320bc54da050a2cee10d759, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}

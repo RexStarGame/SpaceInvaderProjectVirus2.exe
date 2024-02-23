@@ -1,7 +1,7 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class GameOverMenu : MonoBehaviour
 {
@@ -13,10 +13,11 @@ public class GameOverMenu : MonoBehaviour
     private GameObject[] menuButtons; // Array to hold all menu buttons
     private int selectedButtonIndex = 0; // Index of the currently selected button
 
-  
+
 
     public void Start()
     {
+
         // Populate the array with all menu buttons
         menuButtons = new GameObject[]
         {
@@ -38,7 +39,7 @@ public class GameOverMenu : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (isActive)
+        
         {
             // Use arrow keys to navigate through menu items
             if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -50,7 +51,7 @@ public class GameOverMenu : MonoBehaviour
                 ChangeSelectedButton(1);
             }
 
-            
+
         }
         // Press 'F' to click the selected button
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.KeypadEnter)) // checks if input enter eller arrowdown is pressed. 
@@ -58,7 +59,7 @@ public class GameOverMenu : MonoBehaviour
             SelectCurrentButton();
 
         }
-        
+
     }
 
     private void SelectCurrentButton()
@@ -71,18 +72,18 @@ public class GameOverMenu : MonoBehaviour
     // Call this method when the player loses or decides to end the game.
     public void ShowGameOver(float playerTime)
     {
-        
+
         // Display game over text.
         gameOverText.text = "Game Over!\nTime: " + playerTime.ToString("F2") + "s";
 
         // Save player time to leaderboard.
         // Other logic for game over menu...
         // For example, you might display additional information or options.
-     
+
         isActive = true; // Enable navigation and button activation
-      
+
     }
-    
+
 
     // Method to handle changing the selected button
     private void ChangeSelectedButton(int direction)
@@ -101,6 +102,9 @@ public class GameOverMenu : MonoBehaviour
 
     public void RestartGame()
     {
+
+
+        Debug.Log("Reloading Scene...");
         // Get the current active scene
         Scene currentScene = SceneManager.GetActiveScene();
 
@@ -108,8 +112,6 @@ public class GameOverMenu : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
 
         Time.timeScale = 1.0f;
-  
-        // Assuming you have a way to calculate the player's time, replace CalculatePlayerTime() with your actual logic.
     }
 
     // Replace this method with your actual logic to calculate player time.
@@ -122,4 +124,7 @@ public class GameOverMenu : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(menuButtons[selectedButtonIndex]);
         }
     }
+
+
 }
+
