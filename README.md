@@ -1,17 +1,22 @@
 # SpaceInvaderProjectVirus2.exe
 
-you are free to try out our game Space invader however, it's not finish yet as there is much more to fix and to add to this game :) 
+Feel free to experience our Space Invader game, although it's still a work in progress with ongoing improvements and additions!
 
-how to play the game. 
+How to Play:
 
+Activate Speed Attack:
+Use the up-arrow key to engage the speed attack feature.
 
-use the up-arrow to aktiveate speed attack. 
-use the down-arrow to aktivate explosion skill.
-hold the button f down in order to shoot normal attack. 
+Activate Explosion Skill:
+Employ the down-arrow key to activate the explosion skill.
 
-use left and right arrows or a, d to turn left and right. 
+Normal Attack:
+Hold down the 'F' button to unleash a standard shooting attack.
 
-press g to open pause screen. 
+Navigation:
+Utilize the left and right arrows, or 'A' and 'D' keys, to navigate and turn left or right.
 
+Pause the Game:
+Press 'G' to open the pause screen.
 
-i'm a student ;) so kinda busy but in my free time i'll try to create small games for fun as i'm learning to become a game developer as well but still got a lot learn. however, i hope you enjoy the game play or you can always edit the game as you want it. 
+As a student learning to become a game developer, I'm actively working on refining and enhancing the game during my free time. While there's still much to learn, I hope you enjoy the gameplay. Feel free to edit the game as per your preferences or provide feedback for future improvements. Thank you for trying out our game!
